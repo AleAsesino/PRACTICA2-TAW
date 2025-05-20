@@ -1,42 +1,137 @@
-2025# Proyecto CRUD - Universidad
+# 📘 Endpoints – API de Docentes
 
-Este repositorio contiene la base del proyecto Universitario utilizando **Spring Boot**. Cada grupo debe trabajar en su propia rama según las instrucciones del docente.
-
----
-
-## 🚀 Objetivo
-
-Completar las operaciones requeridas sobre el Proyecto.
-
-**Grupos y ramas asignadas**
-
-|**Grupo**|**Ramaogiana**|**Integrantes**|
-| :-: | :-: | :-: |
-|01|grupo-01-springb|[Enrique Rafael Fernández Chiri, Nohemy Ruth Mamani Apaza, Samantha Rousse Gironda Mina, Josué Misael López Huanca, Luz Belén Chávez Patzi, Oscar Joel Choque Flores, Cristhian Pablo Álvarez Guarachi]|
-|02|grupo-02-springb|[Maya Cádiz, Leandro Chávez, Masiel Chirinos, Sergio Luque, Jordy Miranda, Saúl Sánchez, Elizabeth Suzaño]|
-|03|grupo-03-springb|[Bautista Mollo Denzel Guden, Copa Quispe Esther Sara, Guarachi Arguata Alberth, Reyes Barja Carlos Eduardo, Rojas Condoria Fidel Angel, Tancara Suñagua Joel Hernan.]|
-|04|grupo-04-springb|[Marcelo Alejandro Villarroel Gutiérrez, Jonathan Gerson Gutiérrez Condori, Betzabe Gutiérrez Morales, Mikaela Belén Córdova Vásquez, Jhessica Coral Villca Palma, Karen Rocio Catari Calderón, Abigail Blanca Mamani Mamani]|
-|05|grupo-05-springb|["Diana Cecilia Flores Chacón, Juan Sebastián Camacho Fernández, Andrés Wiliam Galarza Salguero, Harold Ruddy Quispe Hilari, José Alejandro Díaz Ali, Michelle Ruth Poma Ramos, Daron Augusto Baldiviezo Aillon"]|
-|06|grupo-06-springb|[José Aruquipa, Miguel Calderón, Herlan Callisaya, Oscar Luján, Edith Marca, Luz Tinta, Daniel Zeballos]|
-|07|grupo-07-springb|[Lenz Abad Alanoca Ojeda,Juan Vidal Mamani Riveros,Herlan Choque Flores,Lorgio Emilio Chura Carrillo,Jesús Alejandro Cruz,Juan Carlos Limachi Maydana]|
-|08|grupo-08-springb|[Amílcar Josías Yujra Chipana, Luis Alfredo Quispe Ortiz, Alan Sergio Yupanqui Corini, Yehonatan Oscar Limachi Corina, Melany Abril Mamani Chamizo, Limbert Mamani Quiñajo, Ronald Choque Sillo]|
-|09|grupo-09-springb|[Bautista Coaquira Jose Abraham, Laura Rios Lizbeth Fabiola, Penélope Gema Copana Fuentes, Sasha Johannes konrad Arana Ramirez, Callisaya Vargas Marco Ronaldo, Callisaya Lanes Shelly Anahi, Choque Gutiérrez Manuel Alejandro, Elías Daniel Beltrán Selaez]|
-|10|grupo-10-springb|[María Teresa Aspiazu Sánchez, Jesús Abed Herrera Sirpa, Joel Alejandro Pérez Murillo, Ariadne Checcid Quiroz Coila, Brandom Jhoseff Amezaga Garrido Cael Mathew Cuevas Alconini, José Alfredo Choque Choque]|
-|11|grupo-11-springb|[Israel Andrés Quenta Pomacusi, Edson Javier Mamani Ticona,Jhamil Elías Mamani Colque,Alexander Nataniel Castillo Centellas,Adrián Marcelo Requena Oros,Maritza Zárate Paco ,Jhoel Alexander Chipana Paye]|
-|12|grupo-12-springb|[Víctor Bernardo Quispe Rojas,Gabriel Omar Cumara Patty,Cristian William Bautista Villcacuti,Rosa Katerine Gonzales Choque,Alvin Angel Magne Aruquipa,Blanca Nataly Chipana Orellana,Ronald Mendoza Caspa,José Julián Quinteros Mollinedo]|
-|13|grupo-13-springb|[Quispe Adriana, Carvajal Ester, Tirado Nayheli, Canaviri Carlos, Loza Humberto, Mamani Sarahi, Ticona Alex]|
-|14|grupo-14-springb|[Gutiérrez Challapa Daniel Rodrigo, Hidalgo Colque Ariana Daniela,Huanca Tito José Manuel,Mamani Mamani Mirko Sony,Quecaño Uruña Erika,Quiñajo Berrios Melina Viana]|
-|15|grupo-15-springb|[Julio Picavia Saravia, Carlos Callisaya Rosas, Iver Mamani, Amiel Natanieli Méndez Vargas, Adriana Valeria Fernández Flores, Luz Edely Aruquipa Ururi]|
-|16|Grupo-16-springb|[Miranda Aguirre Carlos Manuel, Tapia Cortez Genesis Jalid, Lucas Calderon, David Mamani, Rudy Ibarra, Julio Cesar Ticona, José Alejandro Fernández Sánchez ]|
-
-
-
+Estos son los endpoints disponibles para la gestión de docentes en el sistema de Registro Universitario.
 
 ---
 
+### 🔹 `GET /api/docentes`
 
-## 📦 Cómo trabajar en tu rama
+- Obtiene la lista de todos los docentes registrados.
 
-1. Clona el repositorio:
-```bash
-git clone https://github.com/LiaRos-ai/RegistroUniversitario.git
+---
+
+### 🔹 `POST /api/docentes`
+
+- Crea un nuevo docente en el sistema.
+
+---
+
+### 🔹 `PUT /api/docentes/{id}`
+
+- Actualiza los datos de un docente según su ID.
+
+---
+
+### 🔹 `DELETE /api/docentes/{id}`
+
+- Elimina un docente por su ID.
+
+---
+
+### 🔹 `PUT /api/docentes/inscribirse/{id_docente}/{id_materia}`
+
+- Asigna un docente a una materia específica.
+
+---
+# 📘 Endpoints – API de Estudiantes
+
+Estos son los endpoints disponibles para la gestión de estudiantes en el sistema de Registro Universitario.
+
+---
+
+### 🔹 `GET /api/estudiantes`
+- Obtiene la lista de todos los estudiantes registrados.
+
+### 🔹 `GET /api/estudiantes/inscripcion/{numeroInscripcion}`
+- Obtiene un estudiante específico mediante su número de inscripción.
+
+### 🔹 `GET /api/estudiantes/{id}/materias`
+- Lista todas las materias a las que está inscrito un estudiante por su ID.
+
+### 🔹 `GET /api/estudiantes/{id}/lock`
+- Obtiene los datos del estudiante aplicando bloqueo de concurrencia (lock).
+
+### 🔹 `POST /api/estudiantes`
+- Registra un nuevo estudiante en el sistema.
+
+### 🔹 `PUT /api/estudiantes/{id}`
+- Actualiza los datos de un estudiante según su ID.
+
+### 🔹 `PUT /api/estudiantes/{id}/baja`
+- Marca a un estudiante como dado de baja en el sistema.
+
+### 🔹 `GET /api/estudiantes/activos`
+- Obtiene la lista de estudiantes activos.
+
+---
+
+## 📚 Gestión de Inscripciones
+
+### 🔹 `PUT /api/estudiantes/inscribirse/{id_estudiante}/{id_materia}`
+- Inscribe a un estudiante en una materia.
+
+### 🔹 `PUT /api/estudiantes/inscribirse/{id_estudiante}/{id_retiro}/{id_inscribirse}`
+- Modifica una inscripción reemplazando una materia por otra.
+
+### 🔹 `PUT /api/estudiantes/retirar/{id_estudiante}/{id_retiro}`
+- Retira a un estudiante de una materia inscrita.
+
+---
+
+---
+
+# 🧾 Endpoints – Evaluación Docente
+
+Estos endpoints permiten gestionar las evaluaciones realizadas a docentes.
+
+---
+
+### 🔹 `POST /api/evaluaciones-docente`
+- Crea una nueva evaluación docente.
+
+### 🔹 `GET /api/evaluaciones-docente/docente/{docenteId}`
+- Obtiene todas las evaluaciones asociadas a un docente específico.
+
+### 🔹 `GET /api/evaluaciones-docente/{id}`
+- Obtiene una evaluación docente específica por su ID.
+
+### 🔹 `DELETE /api/evaluaciones-docente/{id}`
+- Elimina una evaluación docente por su ID.
+
+---
+
+---
+
+# 📚 Endpoints – Materias
+
+Estos endpoints permiten gestionar las materias en el sistema universitario.
+
+---
+
+### 🔹 `GET /api/materias`
+- Obtiene la lista de todas las materias disponibles.
+- 📌 Acceso: Público (`permitAll`)
+
+### 🔹 `GET /api/materias/{id}`
+- Obtiene una materia específica por su ID.
+- 🔐 Acceso: Roles `ESTUDIANTE`, `DOCENTE`, `ADMIN`
+
+### 🔹 `GET /api/materias/codigo/{codigoUnico}`
+- Obtiene una materia por su código único.
+- 🔐 Acceso: Roles `ESTUDIANTE`, `DOCENTE`, `ADMIN`
+
+### 🔹 `POST /api/materias`
+- Crea una nueva materia.
+- 🔐 Acceso: Roles `ESTUDIANTE`, `DOCENTE`, `ADMIN`
+
+### 🔹 `PUT /api/materias/{id}`
+- Actualiza una materia existente por su ID.
+- 🔐 Acceso: Roles `ESTUDIANTE`, `DOCENTE`, `ADMIN`
+
+### 🔹 `DELETE /api/materias/{id}`
+- Elimina una materia por su ID.
+- 🔐 Acceso: Roles `ESTUDIANTE`, `DOCENTE`, `ADMIN`
+
+### 🔹 `GET /api/materias/formaria-circulo/{materiaId}/{prerequisitoId}`
+- Verifica si agregar un prerequisito a una materia generaría un ciclo de dependencias.
+- 🔐 Acceso: Roles `ESTUDIANTE`, `DOCENTE`, `ADMIN`
